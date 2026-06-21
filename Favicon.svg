@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="kbGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9d4edd;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" fill="url(#kbGradient)" filter="url(#shadow)"/>
+  
+  <!-- Inner Circle for contrast -->
+  <circle cx="100" cy="100" r="95" fill="#07080b" opacity="0.95"/>
+  
+  <!-- Gradient ring -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="url(#kbGradient)" stroke-width="2"/>
+  
+  <!-- KB Text -->
+  <text x="100" y="120" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="url(#kbGradient)" letter-spacing="2">KB</text>
+  
+  <!-- Accent dots -->
+  <circle cx="55" cy="50" r="4" fill="#00d4ff" opacity="0.6"/>
+  <circle cx="145" cy="150" r="4" fill="#9d4edd" opacity="0.6"/>
+</svg>
