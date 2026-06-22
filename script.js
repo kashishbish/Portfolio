@@ -77,24 +77,19 @@ document.querySelectorAll('.work-item, .cert-card, .scattered-item, .timeline-en
     });
 });
 
-// Certificate Modal - IMPROVED PDF Support
+// ============ CERTIFICATE MODAL ============
 function openCertModal(title, filename) {
     const modal = document.getElementById('certModal');
     const frame = document.getElementById('certFrame');
     
-    // Check if it's a PDF
     if (filename.endsWith('.pdf')) {
-        // For PDFs, open in a new tab or use embed
         frame.innerHTML = `<embed src="${filename}" type="application/pdf" width="100%" height="100%" />`;
     } else {
-        // For images, use img tag
         frame.innerHTML = `<img src="${filename}" style="width: 100%; height: 100%; object-fit: contain;" />`;
     }
     
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
-    
-    console.log('📄 Viewing:', filename);
 }
 
 function closeCertModal() {
@@ -106,18 +101,65 @@ function closeCertModal() {
     document.body.style.overflow = 'auto';
 }
 
-// Close on outside click
-document.addEventListener('click', function(event) {
-    const modal = document.getElementById('certModal');
-    if (modal && event.target === modal) {
-        closeCertModal();
-    }
-});
+// ============ TWITTER GALLERY MODAL ============
+let currentTwitterImage = 1;
+const totalTwitterImages = 18;
 
-// Close on Escape
+function openTwitterGallery() {
+    const modal = document.getElementById('twitterGallery');
+    currentTwitterImage = 1;
+    updateTwitterImage();
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeTwitterGallery() {
+    const modal = document.getElementById('twitterGallery');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+function nextTwitterImage() {
+    if (currentTwitterImage < totalTwitterImages) {
+        currentTwitterImage++;
+        updateTwitterImage();
+    }
+}
+
+function prevTwitterImage() {
+    if (currentTwitterImage > 1) {
+        currentTwitterImage--;
+        updateTwitterImage();
+    }
+}
+
+function updateTwitterImage() {
+    const imageNum = String(currentTwitterImage).padStart(2, '0');
+    const img = document.getElementById('twitterImage');
+    const counter = document.getElementById('imageCounter');
+    
+    img.src = `TwitterSentimentAnalysisPhotos/TSA-${currentTwitterImage}.png`;
+    counter.textContent = `Image ${currentTwitterImage} of ${totalTwitterImages}`;
+}
+
+// Close on Escape key
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closeCertModal();
+        closeTwitterGallery();
+    }
+});
+
+// Close on outside click
+document.addEventListener('click', function(event) {
+    const certModal = document.getElementById('certModal');
+    const twitterModal = document.getElementById('twitterGallery');
+    
+    if (certModal && event.target === certModal) {
+        closeCertModal();
+    }
+    if (twitterModal && event.target === twitterModal) {
+        closeTwitterGallery();
     }
 });
 

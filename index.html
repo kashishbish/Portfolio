@@ -11,9 +11,10 @@
     <!-- Header -->
     <header>
         <div class="header-content">
-            <div class="kb-logo">KB</div>
+            <a href="Kashish_Bisht_Resume.pdf" target="_blank" class="kb-logo" title="📄 Click to view resume">KB</a>
             <nav>
                 <a href="#work">Work</a>
+                <a href="#experience">Exp</a>
                 <a href="#certs">Certs</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -101,21 +102,7 @@
                     <span>Pandas</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/kashishbish" target="_blank" class="project-btn">View on GitHub</a>
-                    <button onclick="openCertModal('Twitter Analysis 1', '1781720991543_image.png')" class="project-btn" style="border:none;cursor:pointer;background: linear-gradient(135deg, #00d4ff, #9d4edd);color:#07080b;padding:0.6rem 1.2rem;border-radius:20px;font-weight:600;font-size:0.9rem;transition:all 0.3s ease;">📊 Results</button>
-                </div>
-                
-                <!-- Twitter Sentiment Gallery -->
-                <div class="sentiment-gallery" style="margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;">
-                    <div class="gallery-item" onclick="openCertModal('Sentiment 1', '1781720991543_image.png')" style="cursor:pointer;border-radius:10px;overflow:hidden;border:2px solid #00d4ff;transition:all 0.3s ease;">
-                        <img src="1781720991543_image.png" style="width:100%;height:150px;object-fit:cover;">
-                    </div>
-                    <div class="gallery-item" onclick="openCertModal('Sentiment 2', '1781721005951_image.png')" style="cursor:pointer;border-radius:10px;overflow:hidden;border:2px solid #00d4ff;transition:all 0.3s ease;">
-                        <img src="1781721005951_image.png" style="width:100%;height:150px;object-fit:cover;">
-                    </div>
-                    <div class="gallery-item" onclick="openCertModal('Sentiment 3', '1781722158058_image.png')" style="cursor:pointer;border-radius:10px;overflow:hidden;border:2px solid #00d4ff;transition:all 0.3s ease;">
-                        <img src="1781722158058_image.png" style="width:100%;height:150px;object-fit:cover;">
-                    </div>
+                    <button onclick="openTwitterGallery()" class="project-btn" style="border:none;cursor:pointer;background: linear-gradient(135deg, #00d4ff, #9d4edd);color:#07080b;padding:0.6rem 1.2rem;border-radius:20px;font-weight:600;font-size:0.9rem;transition:all 0.3s ease;">📸 View Project</button>
                 </div>
             </div>
         </article>
@@ -188,49 +175,49 @@
     <section id="certs" class="certifications">
         <h2 class="section-title">Certifications</h2>
         <div class="cert-grid">
-            <div class="cert-card" onclick="openCertModal('LearnTube', '1782023722890_Certificate.jpg')">
+            <div class="cert-card" onclick="openCertModal('LearnTube', 'Certificate.jpg')">
                 <div class="cert-badge">LT</div>
                 <p>Project Management</p>
                 <small>LearnTube</small>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('SimpliLearn', '1782023722883_SimpliLearn_python_certificate.pdf')">
+            <div class="cert-card" onclick="openCertModal('SimpliLearn', 'SimpliLearn python certificate.pdf')">
                 <div class="cert-badge">SL</div>
                 <p>Python Mastery</p>
                 <small>SimpliLearn</small>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('Product School', '1782023722889_artificial-intelligence-micro-certification-aic.pdf')">
+            <div class="cert-card" onclick="openCertModal('Product School', 'artificial-intelligence-micro-certification-aic.pdf')">
                 <div class="cert-badge">PS</div>
                 <p>AI Micro-Cert</p>
                 <small>Product School</small>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('LinkedIn', '1782023722891_CertificateOfCompletion_DecisionMaking_Strategies.pdf')">
+            <div class="cert-card" onclick="openCertModal('LinkedIn', 'CertificateOfCompletion_DecisionMaking Strategies.pdf')">
                 <div class="cert-badge">LI</div>
                 <p>Decision Making</p>
                 <small>LinkedIn Learning</small>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('Google 1', '1782023722891_Coursera_certificate_1.pdf')">
+            <div class="cert-card" onclick="openCertModal('Google 1', 'Coursera certificate 1.pdf')">
                 <div class="cert-badge">G1</div>
                 <p>AI Tools</p>
                 <small>Google Coursera</small>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('Google 2', '1782023722893_Coursera_certificate_2.pdf')">
+            <div class="cert-card" onclick="openCertModal('Google 2', 'Coursera certificate 2.pdf')">
                 <div class="cert-badge">G2</div>
                 <p>Prompting</p>
                 <small>Google Coursera</small>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('Google 3', '1782023722894_Coursera_certificate_3.pdf')">
+            <div class="cert-card" onclick="openCertModal('Google 3', 'Coursera certificate 3.pdf')">
                 <div class="cert-badge">G3</div>
                 <p>AI Responsible</p>
                 <small>Google Coursera</small>
             </div>
 
-            <div class="cert-card" onclick="openCertModal('Oracle', '1782023722895_Oracle_eCertificate.pdf')">
+            <div class="cert-card" onclick="openCertModal('Oracle', 'Oracle eCertificate.pdf')">
                 <div class="cert-badge">OR</div>
                 <p>AI Foundations</p>
                 <small>Oracle</small>
@@ -239,17 +226,17 @@
     </section>
 
     <!-- Experience -->
-    <section class="experience">
+    <section id="experience" class="experience">
         <h2 class="section-title">Journey</h2>
         <div class="timeline-simple">
             <div class="timeline-entry">
                 <h3>Event Coordinator Intern</h3>
                 <p><strong>Incredible MICE</strong> • New Delhi</p>
                 <p class="timeline-date">March - May 2026</p>
-                <p>Coordinated 15+ corporate events. Led Niva Bhupa event in Jaipur. Vendor management. Budget coordination. Team leadership. Got recommendation letter and certificate of completion.</p>
+                <p>Coordinated corporate events. Led Niva Bhupa event in Jaipur. Vendor management. Budget coordination. Team leadership. Got recommendation letter and certificate of completion.</p>
                 <div class="experience-docs">
-                    <a href="Incredible_MICE.pdf" target="_blank" class="doc-btn">📄 Letter of Recommendation</a>
-                    <a href="Certificate_Kashish_Bisht.pdf" target="_blank" class="doc-btn">🏆 Certificate</a>
+                    <a href="Incredible MICE_LOR.pdf" target="_blank" class="doc-btn">📄 Letter of Recommendation</a>
+                    <a href="Incredible_MICE_Certificate.pdf" target="_blank" class="doc-btn">🏆 Certificate</a>
                 </div>
             </div>
 
@@ -277,14 +264,28 @@
 
     <!-- Footer -->
     <footer>
-        <p>Made with Code & Creativity • 2026</p>
     </footer>
 
-    <!-- Modal -->
+    <!-- Modal for Certificates & Images -->
     <div id="certModal" class="modal" onclick="if(event.target === this) closeCertModal()">
         <div class="modal-content">
             <span class="close" onclick="closeCertModal()">&times;</span>
             <div id="certFrame"></div>
+        </div>
+    </div>
+
+    <!-- Modal for Twitter Gallery -->
+    <div id="twitterGallery" class="modal" onclick="if(event.target === this) closeTwitterGallery()">
+        <div class="modal-content">
+            <span class="close" onclick="closeTwitterGallery()">&times;</span>
+            <div class="twitter-gallery-wrapper">
+                <button class="gallery-nav" onclick="prevTwitterImage()">❮</button>
+                <img id="twitterImage" src="TwitterSentimentAnalysisPhotos/TSA-1.png" alt="Twitter Sentiment Analysis" style="max-width:100%;max-height:80vh;border-radius:10px;">
+                <button class="gallery-nav" onclick="nextTwitterImage()">❯</button>
+            </div>
+            <div style="text-align:center;margin-top:1rem;color:#00d4ff;">
+                <p id="imageCounter">Image 1 of 18</p>
+            </div>
         </div>
     </div>
 
