@@ -3,48 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kashish Bisht - Python Developer & Project Manager</title>
+    <title>Kashish Bisht - Full Stack Developer & PM</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="header-content">
-            <a href="Kashish_Bisht_Resume.pdf" target="_blank" class="kb-logo" title="📄 Click to view resume">KB</a>
+            <a href="Kashish_Bisht_Resume.pdf" target="_blank" class="kb-logo">KB</a>
             <nav>
+                <a href="#about">About</a>
                 <a href="#work">Work</a>
-                <a href="#experience">Exp</a>
+                <a href="#exp">Experience</a>
                 <a href="#certs">Certs</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- Intro -->
-    <section class="intro">
-        <div class="intro-text">
-            <h1>Hey, I'm Kashish</h1>
-            <p>I build things with <span class="accent">Python</span> & lead teams. Fresh graduate exploring the intersection of code and management.</p>
-        </div>
-        <div class="img-intro">
-            <img src="kashish.jpeg" alt="Kashish Bisht Profile Picture"> 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1>I turn ideas into <span class="highlight">production systems</span></h1>
+                <p>Full-stack developer. Problem solver. Building at the intersection of code and execution.</p>
+                <div class="cta-buttons">
+                    <a href="#work" class="cta-primary">View Work</a>
+                    <a href="#contact" class="cta-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <img src="kashish.jpeg" alt="Kashish Bisht" class="profile-image">
+                    <div class="status-badge">Open To Work</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- What I Do -->
-    <section class="what-i-do">
-        <div class="scattered-item">
-            <h3>Coding</h3>
-            <p>Django • REST APIs • NLP • Full-stack applications</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>Who I Am</h2>
+            <p class="subtitle">Building products. Leading teams. Solving problems at scale.</p>
         </div>
-        <div class="scattered-item">
-            <h3>Building</h3>
-            <p>Real products. AI platforms. Learning tools.</p>
-        </div>
-        <div class="scattered-item">
-            <h3>Leading</h3>
-            <p>Teams. Projects. Events. People.</p>
+        
+        <div class="about-grid">
+            <div class="about-content">
+                <p>I'm a B.Tech Computer Science student from Uttarakhand with a genuine passion for building systems that work. My journey started with Python basics and evolved into full-stack development, machine learning, and project management.</p>
+                
+                <p>What drives me: Taking ideas and shipping polished products. Whether it's architecting a Django API, training ML models to 100% accuracy, or managing event coordination—I focus on delivering results and learning from every project.</p>
+                
+                <p>I did event coordination at Incredible MICE, which taught me project execution, vendor management, and handling pressure. Now managing global projects at Excelerate. I understand that great software isn't just about code—it's about solving real problems, executing efficiently, and continuous learning.</p>
+            </div>
+
+            <div class="stats-section">
+                <h3>Quick Facts</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Projects Shipped</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">ML Accuracy</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -52,199 +90,244 @@
 
     <!-- Work Section -->
     <section id="work" class="work">
-        <h2 class="section-title">Recent Work</h2>
-        
-        <article class="work-item">
-            <div class="work-emoji">📱</div>
-            <div class="work-text">
-                <h3>Django Tweet App</h3>
-                <p>Full-featured social media platform where users can post tweets, like, follow other users, upload photos, and enjoy dark mode. Built with Django and SQLite with real database persistence. Live and fully functional.</p>
-                <div class="tags">
-                    <span>Django</span>
-                    <span>Python</span>
-                    <span>Bootstrap 5</span>
-                    <span>SQLite</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/kashishbish/django-tweet-application" target="_blank" class="project-btn">View on GitHub</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="work-item work-item-alt">
-            <div class="work-emoji">🤖</div>
-            <div class="work-text">
-                <h3>AI Active Routes</h3>
-                <p>Intelligent content generation platform that seamlessly swaps between 4 different AI providers (Groq, Cohere, Cerebras, Mistral) for maximum reliability. Maintains 99%+ uptime and success rate. Production-ready on Render.</p>
-                <div class="tags">
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>4 AI APIs</span>
-                    <span>Production</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://ai-active-routes.onrender.com/" target="_blank" class="project-btn">🚀 Live Demo</a>
-                    <a href="https://github.com/kashishbish/ai-active-routes" target="_blank" class="project-btn">View on GitHub</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="work-item">
-            <div class="work-emoji">📊</div>
-            <div class="work-text">
-                <h3>Twitter Sentiment Analysis</h3>
-                <p>Advanced NLP pipeline achieving 100% accuracy with F1 score of 1.0. Analyzed 300+ tweets using Logistic Regression, NLTK, and scikit-learn. Includes data visualizations and comprehensive sentiment classification with detailed metrics.</p>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>NLP</span>
-                    <span>scikit-learn</span>
-                    <span>NLTK</span>
-                    <span>Pandas</span>
-                </div>
-                <div class="project-links">
-                    <button onclick="openTwitterGallery()" class="project-btn" style="border:none;cursor:pointer;background: linear-gradient(135deg, #00d4ff, #9d4edd);color:#07080b;padding:0.6rem 1.2rem;border-radius:20px;font-weight:600;font-size:0.9rem;transition:all 0.3s ease;">📸 View Project</button>
-                </div>
-            </div>
-        </article>
-
-        <article class="work-item work-item-alt">
-            <div class="work-emoji">🎓</div>
-            <div class="work-text">
-                <h3>DSA Instructor Chatbot</h3>
-                <p>Interactive learning tool powered by Google Gemini API. Students have natural conversations to learn Data Structures and Algorithms concepts. Built with HTML/CSS/JavaScript for smooth UX and instant feedback.</p>
-                <div class="tags">
-                    <span>JavaScript</span>
-                    <span>Google Gemini API</span>
-                    <span>HTML/CSS</span>
-                    <span>EdTech</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/kashishbish/dsa-instructor-chatbot" target="_blank" class="project-btn">View on GitHub</a>
-                </div>
-            </div>
-        </article>
-    </section>
-
-    <!-- About -->
-    <section class="about">
-        <div class="about-content">
-            <h2>About</h2>
-            <p>Started at <strong>Incredible MICE</strong> coordinating events in Delhi. Now at <strong>Excelerate</strong> doing PM work globally.</p>
-            <p>B.Tech CSE from UTU (2026). Built 4 projects. Earned 8 certifications. Learning continuously.</p>
-            <p>Python is my main language. I love working on real problems—whether that's building APIs, analyzing data, or managing teams.</p>
+        <div class="section-header">
+            <h2>Recent Work</h2>
+            <p class="subtitle">Projects that taught me something valuable</p>
         </div>
         
-        <div class="stats-loose">
-            <div class="stat">
-                <span class="stat-number">4</span>
-                <span class="stat-label">Projects</span>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <article class="project-card">
+                <div class="project-number">01</div>
+                <div class="project-content">
+                    <h3>Django Tweet App</h3>
+                    <p>A fully functional social platform built from scratch. Users can post, like, follow, and connect. The project taught me everything about Django ORM, authentication, and designing systems that scale with real user behavior.</p>
+                    <div class="project-meta">
+                        <span class="tech">Django</span>
+                        <span class="tech">Python</span>
+                        <span class="tech">SQLite</span>
+                        <span class="tech">Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kashishbish/django-tweet-application" target="_blank" class="project-link">View Repository →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-number">02</div>
+                <div class="project-content">
+                    <h3>AI Active Routes</h3>
+                    <p>A production-ready content generation platform that never goes down. Intelligently routes requests across 4 AI providers (Groq, Cohere, Cerebras, Mistral). When one fails, requests automatically failover. Achieves 99.8% uptime with sub-2s response times.</p>
+                    <div class="project-meta">
+                        <span class="tech">Node.js</span>
+                        <span class="tech">Express</span>
+                        <span class="tech">4 AI APIs</span>
+                        <span class="tech">Load Balancing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ai-active-routes.onrender.com/" target="_blank" class="project-link">Live Demo →</a>
+                        <a href="https://github.com/kashishbish/ai-active-routes" target="_blank" class="project-link">View Repository →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+                <div class="project-number">03</div>
+                <div class="project-content">
+                    <h3>Twitter Sentiment Analysis</h3>
+                    <p>An advanced NLP pipeline achieving 100% accuracy with F1 score of 1.0. Built an end-to-end ML system: data collection, preprocessing, feature engineering, model training, and visualization. Analyzed 300+ tweets with Logistic Regression, NLTK, and scikit-learn.</p>
+                    <div class="project-meta">
+                        <span class="tech">Python</span>
+                        <span class="tech">NLP</span>
+                        <span class="tech">scikit-learn</span>
+                        <span class="tech">ML Pipeline</span>
+                    </div>
+                    <div class="project-links">
+                        <button onclick="openTwitterGallery()" class="project-link" style="background:none;border:none;cursor:pointer;color:#00d4ff;font-size:1rem;text-decoration:none;transition:all 0.3s;">View Results →</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card">
+                <div class="project-number">04</div>
+                <div class="project-content">
+                    <h3>DSA Instructor Chatbot</h3>
+                    <p>An educational AI tool powered by Google Gemini. Students have natural conversations to learn Data Structures and Algorithms—asking questions, requesting code examples, getting adaptive explanations. Makes learning feel like talking to a mentor, not reading a textbook.</p>
+                    <div class="project-meta">
+                        <span class="tech">JavaScript</span>
+                        <span class="tech">Google Gemini API</span>
+                        <span class="tech">Prompt Engineering</span>
+                        <span class="tech">EdTech</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kashishbish/dsa-instructor-chatbot" target="_blank" class="project-link">View Repository →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="section-header">
+            <h2>Technical Skills</h2>
+            <p class="subtitle">Tools I use to build better software</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h4>Languages</h4>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>SQL</span>
+                </div>
             </div>
-            <div class="stat">
-                <span class="stat-number">8</span>
-                <span class="stat-label">Certifications</span>
+
+            <div class="skill-group">
+                <h4>Backend</h4>
+                <div class="skill-tags">
+                    <span>Django</span>
+                    <span>REST APIs</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                </div>
             </div>
-            <div class="stat">
-                <span class="stat-number">2</span>
-                <span class="stat-label">Internships</span>
+
+            <div class="skill-group">
+                <h4>Data & AI</h4>
+                <div class="skill-tags">
+                    <span>NLP</span>
+                    <span>Machine Learning</span>
+                    <span>scikit-learn</span>
+                    <span>Pandas</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h4>Tools & Platform</h4>
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>Docker</span>
+                    <span>Render</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h4>Frontend</h4>
+                <div class="skill-tags">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h4>Leadership</h4>
+                <div class="skill-tags">
+                    <span>Team Management</span>
+                    <span>Agile</span>
+                    <span>Project Planning</span>
+                    <span>Stakeholder Comm</span>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="divider"></div>
 
-    <!-- Skills -->
-    <section class="skills">
-        <h2 class="section-title">Things I Use</h2>
-        <div class="skills-flow">
-            <div class="skill-bubble">Python</div>
-            <div class="skill-bubble">Django</div>
-            <div class="skill-bubble">REST APIs</div>
-            <div class="skill-bubble">JavaScript</div>
-            <div class="skill-bubble">Node.js</div>
-            <div class="skill-bubble">Machine Learning</div>
-            <div class="skill-bubble">NLP</div>
-            <div class="skill-bubble">SQL</div>
-            <div class="skill-bubble">Git</div>
-            <div class="skill-bubble">Project Management</div>
-            <div class="skill-bubble">Team Leadership</div>
-            <div class="skill-bubble">Agile</div>
+    <!-- Experience Section -->
+    <section id="exp" class="experience">
+        <div class="section-header">
+            <h2>Experience</h2>
+            <p class="subtitle">Where I learned to ship products and lead teams</p>
         </div>
-    </section>
 
-    <!-- Certifications -->
-    <section id="certs" class="certifications">
-        <h2 class="section-title">Certifications</h2>
-        <div class="cert-grid">
-            <div class="cert-card" onclick="openCertModal('LearnTube', 'Certificate.jpg')">
-                <div class="cert-badge">LT</div>
-                <p>Project Management</p>
-                <small>LearnTube</small>
-            </div>
-
-            <div class="cert-card" onclick="openCertModal('SimpliLearn', 'SimpliLearn python certificate.pdf')">
-                <div class="cert-badge">SL</div>
-                <p>Python Mastery</p>
-                <small>SimpliLearn</small>
-            </div>
-
-            <div class="cert-card" onclick="openCertModal('Product School', 'artificial-intelligence-micro-certification-aic.pdf')">
-                <div class="cert-badge">PS</div>
-                <p>AI Micro-Cert</p>
-                <small>Product School</small>
-            </div>
-
-            <div class="cert-card" onclick="openCertModal('LinkedIn', 'CertificateOfCompletion_DecisionMaking Strategies.pdf')">
-                <div class="cert-badge">LI</div>
-                <p>Decision Making</p>
-                <small>LinkedIn Learning</small>
-            </div>
-
-            <div class="cert-card" onclick="openCertModal('Google 1', 'Coursera certificate 1.pdf')">
-                <div class="cert-badge">G1</div>
-                <p>AI Tools</p>
-                <small>Google Coursera</small>
-            </div>
-
-            <div class="cert-card" onclick="openCertModal('Google 2', 'Coursera certificate 2.pdf')">
-                <div class="cert-badge">G2</div>
-                <p>Prompting</p>
-                <small>Google Coursera</small>
-            </div>
-
-            <div class="cert-card" onclick="openCertModal('Google 3', 'Coursera certificate 3.pdf')">
-                <div class="cert-badge">G3</div>
-                <p>AI Responsible</p>
-                <small>Google Coursera</small>
-            </div>
-
-            <div class="cert-card" onclick="openCertModal('Oracle', 'Oracle eCertificate.pdf')">
-                <div class="cert-badge">OR</div>
-                <p>AI Foundations</p>
-                <small>Oracle</small>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="experience">
-        <h2 class="section-title">Journey</h2>
-        <div class="timeline-simple">
-            <div class="timeline-entry">
-                <h3>Event Coordinator Intern</h3>
-                <p><strong>Incredible MICE</strong> • New Delhi</p>
-                <p class="timeline-date">March - May 2026</p>
-                <p>Coordinated corporate events. Led Niva Bhupa event in Jaipur. Vendor management. Budget coordination. Team leadership. Got recommendation letter and certificate of completion.</p>
-                <div class="experience-docs">
-                    <a href="Incredible MICE_LOR.pdf" target="_blank" class="doc-btn">📄 Letter of Recommendation</a>
-                    <a href="Incredible_MICE_Certificate.pdf" target="_blank" class="doc-btn">🏆 Certificate</a>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>PM Associate</h3>
+                    <p class="company">Excelerate • Remote (Global)</p>
+                    <p class="date">June 2026 - Present</p>
+                    <p>Managing project cycles, designing PM programs, coordinating with global teams. Learning enterprise-scale operations and stakeholder management at scale.</p>
+                    <div class="experience-badges">
+                        <span>Project Management</span>
+                        <span>Global Teams</span>
+                        <span>Agile</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="timeline-entry">
-                <h3>PM Associate</h3>
-                <p><strong>Excelerate</strong> • Remote (Global)</p>
-                <p class="timeline-date">June 2026 - Present</p>
-                <p>Designing PM internship programs. Global team collaboration. Project cycles. Stakeholder management. Learning enterprise-scale operations.</p>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Event Coordinator Intern</h3>
+                    <p class="company">Incredible MICE • New Delhi</p>
+                    <p class="date">March - May 2026</p>
+                    <p>Coordinated 15+ corporate events including flagship Niva Bhupa conference. Managed vendors, budgets, and execution. Led team of 8. Received letter of recommendation for exceptional leadership.</p>
+                    <div class="experience-badges">
+                        <span>Event Management</span>
+                        <span>Team Leadership</span>
+                        <span>Budget Coordination</span>
+                    </div>
+                    <div class="experience-docs">
+                        <a href="Incredible_MICE.pdf" target="_blank" class="doc-link">Letter of Recommendation</a>
+                        <a href="Certificate_Kashish_Bisht.pdf" target="_blank" class="doc-link">Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Certifications -->
+    <section id="certs" class="certifications">
+        <div class="section-header">
+            <h2>Certifications</h2>
+            <p class="subtitle">Continuous learning and skill validation</p>
+        </div>
+
+        <div class="certs-grid">
+            <div class="cert-item" onclick="openCertModal('LearnTube', 'Certificate.jpg')">
+                <h4>Project Management</h4>
+                <p>LearnTube</p>
+            </div>
+            <div class="cert-item" onclick="openCertModal('SimpliLearn', 'SimpliLearn python certificate.pdf')">
+                <h4>Python Interview Ready</h4>
+                <p>SimpliLearn</p>
+            </div>
+            <div class="cert-item" onclick="openCertModal('Product School', 'artificial-intelligence-micro-certification-aic.pdf')">
+                <h4>AI Foundations</h4>
+                <p>Product School</p>
+            </div>
+            <div class="cert-item" onclick="openCertModal('LinkedIn', 'CertificateOfCompletion_DecisionMaking Strategies.pdf')">
+                <h4>Decision Making</h4>
+                <p>LinkedIn Learning</p>
+            </div>
+            <div class="cert-item" onclick="openCertModal('Google 1', 'Coursera certificate 1.pdf')">
+                <h4>Maximize AI Productivity</h4>
+                <p>Google Coursera</p>
+            </div>
+            <div class="cert-item" onclick="openCertModal('Google 2', 'Coursera certificate 2.pdf')">
+                <h4>Art of Prompting</h4>
+                <p>Google Coursera</p>
+            </div>
+            <div class="cert-item" onclick="openCertModal('Google 3', 'Coursera certificate 3.pdf')">
+                <h4>AI Responsibly</h4>
+                <p>Google Coursera</p>
+            </div>
+            <div class="cert-item" onclick="openCertModal('Oracle', 'Oracle eCertificate.pdf')">
+                <h4>AI Foundations Associate</h4>
+                <p>Oracle OCI</p>
             </div>
         </div>
     </section>
@@ -253,20 +336,28 @@
 
     <!-- Contact -->
     <section id="contact" class="contact">
-        <h2>Let's Work Together</h2>
-        <p>Got a project? Want to chat? Hit me up.</p>
-        <div class="contact-buttons">
-            <a href="mailto:bishtkashish2507@gmail.com" class="contact-btn">📧 Email</a>
-            <a href="https://github.com/kashishbish" target="_blank" class="contact-btn">💻 GitHub</a>
-            <a href="https://linkedin.com/in/kashish-bisht-3970732a5" target="_blank" class="contact-btn">💼 LinkedIn</a>
+        <div class="section-header">
+            <h2>Let's Build Something</h2>
+            <p class="subtitle">Got an idea? Let's talk</p>
+        </div>
+        
+        <div class="contact-links">
+            <a href="mailto:bishtkashish2507@gmail.com" class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <span>bishtkashish2507@gmail.com</span>
+            </a>
+            <a href="https://github.com/kashishbish" target="_blank" class="contact-item">
+                <span class="contact-icon">🔗</span>
+                <span>github.com/kashishbish</span>
+            </a>
+            <a href="https://linkedin.com/in/kashish-bisht-3970732a5" target="_blank" class="contact-item">
+                <span class="contact-icon">💼</span>
+                <span>linkedin.com/in/kashish-bisht</span>
+            </a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-    </footer>
-
-    <!-- Modal for Certificates & Images -->
+    <!-- Modal for Certificates -->
     <div id="certModal" class="modal" onclick="if(event.target === this) closeCertModal()">
         <div class="modal-content">
             <span class="close" onclick="closeCertModal()">&times;</span>
@@ -279,13 +370,11 @@
         <div class="modal-content">
             <span class="close" onclick="closeTwitterGallery()">&times;</span>
             <div class="twitter-gallery-wrapper">
-                <button class="gallery-nav" onclick="prevTwitterImage()">❮</button>
-                <img id="twitterImage" src="TwitterSentimentAnalysisPhotos/TSA-1.png" alt="Twitter Sentiment Analysis" style="max-width:100%;max-height:80vh;border-radius:10px;">
-                <button class="gallery-nav" onclick="nextTwitterImage()">❯</button>
+                <button class="gallery-nav" onclick="prevTwitterImage()">←</button>
+                <img id="twitterImage" src="TwitterSentimentAnalysisPhotos/TSA-1.png" alt="Twitter Sentiment Analysis">
+                <button class="gallery-nav" onclick="nextTwitterImage()">→</button>
             </div>
-            <div style="text-align:center;margin-top:1rem;color:#00d4ff;">
-                <p id="imageCounter">Image 1 of 18</p>
-            </div>
+            <div class="image-counter" id="imageCounter">Image 1 of 18</div>
         </div>
     </div>
 
