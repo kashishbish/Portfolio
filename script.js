@@ -24,6 +24,15 @@ function openPhotoGallery() {
     }
 }
 
+// Coursera Modal Function
+function openCourseraModal() {
+    const modal = document.getElementById('coursera-modal');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
 // Modal functionality for case studies
 const caseStudyCards = document.querySelectorAll('.case-study-card');
 const modals = document.querySelectorAll('.modal');
@@ -151,4 +160,4 @@ document.querySelectorAll('.case-study-card, .skill-group, .stat-card, .principl
     });
 });
 
-console.log('✅ Portfolio loaded with interactive features!');
+console.log('Portfolio loaded with interactive features!');

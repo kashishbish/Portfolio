@@ -23,8 +23,8 @@
                 <a href="#about">About</a>
                 <a href="#philosophy">Philosophy</a>
                 <a href="#case-studies">Work</a>
-                <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
                 <a href="#certificates">Certificates</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -75,7 +75,7 @@
                         <div class="stat-label">Tasks Structured</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">9</div>
+                        <div class="stat-number">7</div>
                         <div class="stat-label">Team Members</div>
                     </div>
                     <div class="stat-card">
@@ -134,7 +134,7 @@
     <section id="case-studies" class="case-studies">
         <div class="section-header">
             <h2>Featured Work</h2>
-            <p class="subtitle">Click to explore detailed case studies</p>
+            <p class="subtitle">Deep dives into key projects</p>
         </div>
         
         <div class="case-study-container">
@@ -168,6 +168,23 @@
                     <span class="tech">Node.js</span>
                     <span class="tech">Load Balancing</span>
                     <span class="tech">4 AI APIs</span>
+                </div>
+                <p class="click-hint">Click to read full case study →</p>
+            </article>
+
+            <article class="case-study-card" data-modal="modal-deloitte">
+                <div class="case-study-header">
+                    <div class="case-study-number">03</div>
+                    <div>
+                        <h3>Manufacturing Dashboard</h3>
+                        <p class="case-study-subtitle">Deloitte Client Proposal</p>
+                    </div>
+                </div>
+                <p class="case-study-preview">Professional client proposal for real-time manufacturing status dashboard. Strategic design and technical roadmap.</p>
+                <div class="case-study-meta">
+                    <span class="tech">Client Proposal</span>
+                    <span class="tech">Dashboard Design</span>
+                    <span class="tech">Deloitte</span>
                 </div>
                 <p class="click-hint">Click to read full case study →</p>
             </article>
@@ -234,74 +251,35 @@
         </div>
     </div>
 
-    <div class="divider"></div>
+    <div id="modal-deloitte" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <h2>Manufacturing Dashboard Proposal</h2>
+                <p class="modal-subtitle">Deloitte Client Deliverable</p>
 
-    <section id="skills" class="skills">
-        <div class="section-header">
-            <h2>Technical Skills</h2>
-            <p class="subtitle">Tools and frameworks I use to ship products</p>
-        </div>
+                <h3>The Client Challenge</h3>
+                <p>A manufacturing client needed real-time visibility into factory floor status. Production data was scattered across systems, making it impossible for managers to spot issues quickly.</p>
 
-        <div class="skills-grid">
-            <div class="skill-group">
-                <h4>Languages</h4>
-                <div class="skill-tags">
-                    <span>Python</span>
-                    <span>JavaScript</span>
-                    <span>SQL</span>
-                </div>
-            </div>
+                <h3>Proposal Scope</h3>
+                <p>I designed a comprehensive proposal covering:</p>
+                <ul>
+                    <li><strong>Dashboard Architecture:</strong> Real-time data aggregation from multiple factory systems into a unified view.</li>
+                    <li><strong>Key Metrics:</strong> Production rate, downtime alerts, equipment status, quality metrics.</li>
+                    <li><strong>User Interface:</strong> Clean, intuitive design for both managers and operators at different skill levels.</li>
+                    <li><strong>Implementation Timeline:</strong> Phased rollout across 3 production lines.</li>
+                </ul>
 
-            <div class="skill-group">
-                <h4>Backend & Architecture</h4>
-                <div class="skill-tags">
-                    <span>Django</span>
-                    <span>Node.js/Express</span>
-                    <span>REST APIs</span>
-                    <span>Load Balancing</span>
-                </div>
-            </div>
+                <h3>Strategic Value</h3>
+                <p>This proposal demonstrated the ability to translate complex business problems into technical solutions, communicate with non-technical stakeholders, and scope projects for real-world delivery.</p>
 
-            <div class="skill-group">
-                <h4>AI & Data</h4>
-                <div class="skill-tags">
-                    <span>NLP</span>
-                    <span>Machine Learning</span>
-                    <span>Prompt Engineering</span>
-                    <span>LLM APIs</span>
-                </div>
-            </div>
-
-            <div class="skill-group">
-                <h4>Product & PM</h4>
-                <div class="skill-tags">
-                    <span>Work Breakdown Structure</span>
-                    <span>Project Planning</span>
-                    <span>Risk Mitigation</span>
-                    <span>Team Coordination</span>
-                </div>
-            </div>
-
-            <div class="skill-group">
-                <h4>Frontend</h4>
-                <div class="skill-tags">
-                    <span>HTML/CSS</span>
-                    <span>Responsive Design</span>
-                    <span>Bootstrap</span>
-                    <span>JavaScript</span>
-                </div>
-            </div>
-
-            <div class="skill-group">
-                <h4>Tools & Platforms</h4>
-                <div class="skill-tags">
-                    <span>Git/GitHub</span>
-                    <span>Asana</span>
-                    <span>Render</span>
+                <div class="modal-meta">
+                    <p><strong>Deliverable:</strong> Professional client proposal document</p>
+                    <a href="./Task 3 Software Development Proposal.docx" target="_blank" class="modal-link">View Proposal →</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="divider"></div>
 
@@ -313,20 +291,6 @@
 
         <div class="projects-grid">
             <div class="project-card">
-                <h3>AI Active Routes</h3>
-                <p class="project-category">Production Platform | 99.8% Uptime</p>
-                <p>Intelligent failover across 4 AI providers. Sub-2s response times. Real traffic, production deployment.</p>
-                <div class="project-tags">
-                    <span>Node.js</span>
-                    <span>Load Balancing</span>
-                    <span>Render</span>
-                </div>
-                <div class="project-links">
-                    <a href="#case-studies" class="project-link">View Case Study →</a>
-                </div>
-            </div>
-
-            <div class="project-card">
                 <h3>Django Tweet App</h3>
                 <p class="project-category">Full-Stack | Social Platform</p>
                 <p>Complete social platform with authentication, CRUD operations, permission controls, responsive design.</p>
@@ -336,7 +300,21 @@
                     <span>Bootstrap</span>
                 </div>
                 <div class="project-links">
-                    <a href="#case-studies" class="project-link">View Case Study →</a>
+                    <a href="https://github.com/kashishbish/django-tweet-application" target="_blank" class="project-link">View Repository →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>AI Active Routes</h3>
+                <p class="project-category">Production Platform | 99.8% Uptime</p>
+                <p>Intelligent failover across 4 AI providers. Sub-2s response times. Real traffic, production deployment.</p>
+                <div class="project-tags">
+                    <span>Node.js</span>
+                    <span>Load Balancing</span>
+                    <span>Render</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/kashishbish/ai-active-routes" target="_blank" class="project-link">View Repository →</a>
                 </div>
             </div>
 
@@ -370,7 +348,7 @@
 
             <div class="project-card">
                 <h3>Daikibo Data Unification</h3>
-                <p class="project-category">Data Integration | Deloitte Task 1</p>
+                <p class="project-category">Data Integration | Deloitte</p>
                 <p>Industrial IoT telemetry unification. Transforms 2 formats into standardized structure. Production-ready Python.</p>
                 <div class="project-tags">
                     <span>Python</span>
@@ -383,8 +361,8 @@
             </div>
 
             <div class="project-card">
-                <h3>Manufacturing Dashboard Proposal</h3>
-                <p class="project-category">Client Proposal | Deloitte Task 2</p>
+                <h3>Manufacturing Dashboard</h3>
+                <p class="project-category">Client Proposal | Deloitte</p>
                 <p>Development proposal for real-time manufacturing status dashboard. Professional client deliverable document.</p>
                 <div class="project-tags">
                     <span>Client Proposal</span>
@@ -392,28 +370,14 @@
                     <span>Dashboard</span>
                 </div>
                 <div class="project-links">
-                    <a href="./Task_3_Software_Development_Proposal.docx" target="_blank" class="project-link">View Proposal →</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>DSA Instructor Proposal</h3>
-                <p class="project-category">Project Proposal | Educational AI</p>
-                <p>Strategic proposal for AI-powered DSA learning platform. Comprehensive documentation and implementation roadmap.</p>
-                <div class="project-tags">
-                    <span>Proposal</span>
-                    <span>EdTech</span>
-                    <span>Strategy</span>
-                </div>
-                <div class="project-links">
-                    <a href="javascript:void(0)" onclick="alert('Proposal document')" class="project-link">View Proposal →</a>
+                    <a href="./Task 3 Software Development Proposal.docx" target="_blank" class="project-link">View Proposal →</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <h3>Excelerate Project Planning</h3>
                 <p class="project-category">PM | International Coordination</p>
-                <p>Led planning for 3-month program. 18-task WBS, 9 team members, 5 time zones, 1000+ students.</p>
+                <p>Led planning for 3-month program. 18-task WBS, 7 team members, 3 time zones, 1000+ students.</p>
                 <div class="project-tags">
                     <span>Project Management</span>
                     <span>Team Coordination</span>
@@ -450,31 +414,79 @@
                 <div class="photo-gallery">
                     <div class="gallery-item">
                         <img src="./TwitterSentimentAnalysisPhotos/TSA-1.png" alt="Sentiment Analysis 1" class="gallery-image">
-                        <p class="gallery-caption">Data Loading & Processing</p>
+                        <p class="gallery-caption">Import Modules</p>
                     </div>
                     <div class="gallery-item">
                         <img src="./TwitterSentimentAnalysisPhotos/TSA-2.png" alt="Sentiment Analysis 2" class="gallery-image">
-                        <p class="gallery-caption">Dataset Overview</p>
+                        <p class="gallery-caption">Loading Dataset</p>
                     </div>
                     <div class="gallery-item">
                         <img src="./TwitterSentimentAnalysisPhotos/TSA-3.png" alt="Sentiment Analysis 3" class="gallery-image">
-                        <p class="gallery-caption">Data Cleaning</p>
+                        <p class="gallery-caption">Data Info & Structure</p>
                     </div>
                     <div class="gallery-item">
                         <img src="./TwitterSentimentAnalysisPhotos/TSA-4.png" alt="Sentiment Analysis 4" class="gallery-image">
-                        <p class="gallery-caption">Feature Engineering</p>
+                        <p class="gallery-caption">Data Preview</p>
                     </div>
                     <div class="gallery-item">
                         <img src="./TwitterSentimentAnalysisPhotos/TSA-5.png" alt="Sentiment Analysis 5" class="gallery-image">
-                        <p class="gallery-caption">Model Training</p>
+                        <p class="gallery-caption">Cleaning & Preprocessing</p>
                     </div>
                     <div class="gallery-item">
                         <img src="./TwitterSentimentAnalysisPhotos/TSA-6.png" alt="Sentiment Analysis 6" class="gallery-image">
-                        <p class="gallery-caption">Evaluation Metrics</p>
+                        <p class="gallery-caption">Text Processing</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-7.png" alt="Sentiment Analysis 7" class="gallery-image">
+                        <p class="gallery-caption">Feature Extraction</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-8.png" alt="Sentiment Analysis 8" class="gallery-image">
+                        <p class="gallery-caption">Tokenization</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-9.png" alt="Sentiment Analysis 9" class="gallery-image">
+                        <p class="gallery-caption">TF-IDF Vectorization</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-10.png" alt="Sentiment Analysis 10" class="gallery-image">
+                        <p class="gallery-caption">Model Training</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-11.png" alt="Sentiment Analysis 11" class="gallery-image">
+                        <p class="gallery-caption">Model Evaluation</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-12.png" alt="Sentiment Analysis 12" class="gallery-image">
+                        <p class="gallery-caption">Confusion Matrix</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-13.png" alt="Sentiment Analysis 13" class="gallery-image">
+                        <p class="gallery-caption">Performance Metrics</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-14.png" alt="Sentiment Analysis 14" class="gallery-image">
+                        <p class="gallery-caption">Classification Report</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-15.png" alt="Sentiment Analysis 15" class="gallery-image">
+                        <p class="gallery-caption">Visualization 1</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-16.png" alt="Sentiment Analysis 16" class="gallery-image">
+                        <p class="gallery-caption">Visualization 2</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-17.png" alt="Sentiment Analysis 17" class="gallery-image">
+                        <p class="gallery-caption">Results Summary</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./TwitterSentimentAnalysisPhotos/TSA-18.png" alt="Sentiment Analysis 18" class="gallery-image">
+                        <p class="gallery-caption">Final Analysis</p>
                     </div>
                 </div>
 
-                <h3 style="margin-top: 2rem;">ML Pipeline</h3>
+                <h3 style="margin-top: 2rem;">ML Pipeline Steps</h3>
                 <p><strong>Step 1:</strong> Data Collection - 300+ labeled tweets</p>
                 <p><strong>Step 2:</strong> Preprocessing - Text cleaning, tokenization</p>
                 <p><strong>Step 3:</strong> Feature Engineering - TF-IDF vectorization</p>
@@ -488,6 +500,128 @@
             </div>
         </div>
     </div>
+
+    <div id="coursera-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <h2>Coursera Certificates</h2>
+                <p class="modal-subtitle">Google AI Learning Path</p>
+                
+                <div class="coursera-certs">
+                    <div class="cert-preview">
+                        <div class="cert-icon">📜</div>
+                        <h3>Coursera Certificate 1</h3>
+                        <p class="cert-issuer">Google via Coursera</p>
+                        <p class="cert-date">May 2026</p>
+                        <p class="cert-desc">Maximize Productivity With AI Tools</p>
+                        <a href="./certificates/Coursera certificate 1.pdf" target="_blank" class="cert-link">View Certificate →</a>
+                    </div>
+
+                    <div class="cert-preview">
+                        <div class="cert-icon">📜</div>
+                        <h3>Coursera Certificate 2</h3>
+                        <p class="cert-issuer">Google via Coursera</p>
+                        <p class="cert-date">May 2026</p>
+                        <p class="cert-desc">Discover the Art of Prompting</p>
+                        <a href="./certificates/Coursera certificate 2.pdf" target="_blank" class="cert-link">View Certificate →</a>
+                    </div>
+
+                    <div class="cert-preview">
+                        <div class="cert-icon">📜</div>
+                        <h3>Coursera Certificate 3</h3>
+                        <p class="cert-issuer">Google via Coursera</p>
+                        <p class="cert-date">May 2026</p>
+                        <p class="cert-desc">Use AI Responsibly</p>
+                        <a href="./certificates/Coursera certificate 3.pdf" target="_blank" class="cert-link">View Certificate →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section id="certificates" class="certificates">
+        <div class="section-header">
+            <h2>Certifications & Achievements</h2>
+            <p class="subtitle">Professional development and recognized expertise</p>
+        </div>
+
+        <div class="certificates-grid">
+            <div class="cert-card">
+                <div class="cert-icon">🏆</div>
+                <h3>Deloitte Technology</h3>
+                <p class="cert-issuer">Deloitte via Forage</p>
+                <p class="cert-date">June 2026</p>
+                <a href="./certificates/Deloitte.pdf" target="_blank" class="cert-link">View →</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <h3>Oracle AI Foundations</h3>
+                <p class="cert-issuer">Oracle University</p>
+                <p class="cert-date">October 2025</p>
+                <a href="./certificates/Oracle eCertificate.pdf" target="_blank" class="cert-link">View →</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">🤖</div>
+                <h3>AI Micro-Certification</h3>
+                <p class="cert-issuer">Product School</p>
+                <p class="cert-date">April 2026</p>
+                <a href="./certificates/artificial-intelligence-micro-certification-aic.pdf" target="_blank" class="cert-link">View →</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">🐍</div>
+                <h3>Python Interview Ready</h3>
+                <p class="cert-issuer">SimpliLearn</p>
+                <p class="cert-date">July 2024</p>
+                <a href="./certificates/SimpliLearn python certificate.pdf" target="_blank" class="cert-link">View →</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">☕</div>
+                <h3>Java Certification</h3>
+                <p class="cert-issuer">KG Coding</p>
+                <p class="cert-date">2024</p>
+                <a href="./certificates/Java certificate.png" target="_blank" class="cert-link">View →</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">📖</div>
+                <h3>Coursera Certificates</h3>
+                <p class="cert-issuer">Google</p>
+                <p class="cert-date">May 2026</p>
+                <a href="javascript:void(0)" onclick="openCourseraModal()" class="cert-link">View (3) →</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">📚</div>
+                <h3>Decision Making Strategies</h3>
+                <p class="cert-issuer">LinkedIn Learning</p>
+                <p class="cert-date">May 2026</p>
+                <a href="./certificates/CertificateOfCompletion_DecisionMaking Strategies.pdf" target="_blank" class="cert-link">View →</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">📈</div>
+                <h3>Project Management</h3>
+                <p class="cert-issuer">LearnTube</p>
+                <p class="cert-date">2026</p>
+                <a href="./certificates/Certificate.jpg" target="_blank" class="cert-link">View →</a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">🎬</div>
+                <h3>Digital Marketing</h3>
+                <p class="cert-issuer">LearnTube</p>
+                <p class="cert-date">2023</p>
+                <a href="./certificates/Digital Marketing by Learn Tube.jpeg" target="_blank" class="cert-link">View →</a>
+            </div>
+        </div>
+    </section>
 
     <div class="divider"></div>
 
@@ -543,102 +677,10 @@
                         <span>Logistics</span>
                     </div>
                     <div class="experience-documents">
-                        <a href="./Incredible_MICE_LOR.pdf" target="_blank" class="doc-link">📄 Letter of Recommendation</a>
-                        <a href="./Incredible_MICE_Certificate.pdf" target="_blank" class="doc-link">🏆 Certificate</a>
+                        <a href="./certificates/Incredible MICE_LOR.pdf" target="_blank" class="doc-link">📄 Letter of Recommendation</a>
+                        <a href="./certificates/Incredible_MICE_Certificate.pdf" target="_blank" class="doc-link">🏆 Certificate</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section id="certificates" class="certificates">
-        <div class="section-header">
-            <h2>Certifications & Achievements</h2>
-            <p class="subtitle">Professional development and recognized expertise</p>
-        </div>
-
-        <div class="certificates-grid">
-            <div class="cert-card">
-                <div class="cert-icon">🏆</div>
-                <h3>Deloitte Technology Job Simulation</h3>
-                <p class="cert-issuer">Deloitte via Forage</p>
-                <p class="cert-date">June 2026</p>
-                <p class="cert-desc">Coding & Development certification. Completed practical tasks in data transformation and system design.</p>
-                <a href="./certificates/Deloitte.pdf" target="_blank" class="cert-link">View Certificate →</a>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-icon">🎓</div>
-                <h3>AI Foundations Associate</h3>
-                <p class="cert-issuer">Oracle University OCI</p>
-                <p class="cert-date">2026</p>
-                <p class="cert-desc">Oracle Cloud Infrastructure certification for AI and machine learning fundamentals.</p>
-                <a href="./certificates/Oracle_eCertificate.pdf" target="_blank" class="cert-link">View Certificate →</a>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-icon">🤖</div>
-                <h3>Artificial Intelligence Micro-Certification</h3>
-                <p class="cert-issuer">Product School</p>
-                <p class="cert-date">April 2026</p>
-                <p class="cert-desc">Professional certification in AI concepts, applications, and business impact.</p>
-                <a href="./certificates/artificial-intelligence-micro-certification-aic.pdf" target="_blank" class="cert-link">View Certificate →</a>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-icon">🐍</div>
-                <h3>Python Interview Ready</h3>
-                <p class="cert-issuer">SimpliLearn</p>
-                <p class="cert-date">2024</p>
-                <p class="cert-desc">Comprehensive Python training covering coding interviews and production-ready code.</p>
-                <a href="./certificates/SimpliLearn_python_certificate.pdf" target="_blank" class="cert-link">View Certificate →</a>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-icon">📚</div>
-                <h3>Google AI Learning Path</h3>
-                <p class="cert-issuer">Google</p>
-                <p class="cert-date">May 2026</p>
-                <p class="cert-desc">Completed: Use AI Responsibly, Art of Prompting, AI Essentials.</p>
-                <a href="./certificates/Certificate_of_Completion_Decision_Making_Strategy.pdf" target="_blank" class="cert-link">View Certificate →</a>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-icon">📖</div>
-                <h3>Coursera Python Certificate</h3>
-                <p class="cert-issuer">Coursera</p>
-                <p class="cert-date">2025-2026</p>
-                <p class="cert-desc">Multiple Python and programming certificates from Coursera courses.</p>
-                <a href="./certificates/Coursera_certificate_1.pdf" target="_blank" class="cert-link">View Certificate 1 →</a>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-icon">💼</div>
-                <h3>Incredible MICE Certificate</h3>
-                <p class="cert-issuer">Incredible MICE, New Delhi</p>
-                <p class="cert-date">May 2026</p>
-                <p class="cert-desc">Event coordination and project management certification from internship.</p>
-                <a href="./certificates/Incredible_MICE_Certificate.pdf" target="_blank" class="cert-link">View Certificate →</a>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-icon">📋</div>
-                <h3>Event Coordination LOR</h3>
-                <p class="cert-issuer">Incredible MICE, New Delhi</p>
-                <p class="cert-date">May 2026</p>
-                <p class="cert-desc">Letter of Recommendation for exceptional event coordination and leadership.</p>
-                <a href="./certificates/Incredible_MICE_LOR.pdf" target="_blank" class="cert-link">View Letter →</a>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-icon">🎬</div>
-                <h3>Digital Marketing by Learn Tube</h3>
-                <p class="cert-issuer">Learn Tube</p>
-                <p class="cert-date">2023</p>
-                <p class="cert-desc">Digital marketing fundamentals and online growth strategies.</p>
-                <a href="./certificates/Digital_Marketing_by_Learn_Tube.jpg" target="_blank" class="cert-link">View Certificate →</a>
             </div>
         </div>
     </section>

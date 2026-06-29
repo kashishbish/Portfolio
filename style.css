@@ -1036,14 +1036,14 @@ section {
 /* CERTIFICATES SECTION */
 .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
 }
 
 .cert-card {
     border: 1px solid var(--border-color);
-    border-radius: 15px;
-    padding: 2.5rem;
+    border-radius: 12px;
+    padding: 1.5rem;
     background: rgba(0, 212, 255, 0.02);
     transition: all 0.3s ease;
     text-align: center;
@@ -1052,39 +1052,41 @@ section {
 
 .cert-card:hover {
     border-color: var(--primary);
-    box-shadow: 0 25px 55px rgba(0, 212, 255, 0.25);
-    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 212, 255, 0.2);
+    transform: translateY(-8px) scale(1.02);
 }
 
 .cert-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
 }
 
 .cert-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
     color: var(--primary);
+    font-weight: 700;
 }
 
 .cert-issuer {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: var(--secondary);
     font-weight: 600;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
 }
 
 .cert-date {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .cert-desc {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
     color: var(--text-light);
+    display: none;
 }
 
 .cert-link {
@@ -1092,16 +1094,70 @@ section {
     color: var(--primary);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: all 0.3s ease;
-    padding: 0.6rem 1.2rem;
+    padding: 0.4rem 0.8rem;
     border: 1px solid var(--primary);
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
 .cert-link:hover {
     background: rgba(0, 212, 255, 0.1);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+}
+
+/* COURSERA MODAL */
+.coursera-certs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.cert-preview {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    background: rgba(0, 212, 255, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cert-preview:hover {
+    border-color: var(--primary);
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.cert-preview .cert-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cert-preview h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.cert-preview .cert-issuer {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.cert-preview .cert-date {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.cert-preview .cert-desc {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.cert-preview .cert-link {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
 }
 
 /* CONTACT SECTION */
